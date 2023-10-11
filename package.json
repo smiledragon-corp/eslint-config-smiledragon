@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-smiledragon-frontend",
+  "name": "eslint-config-smiledragon",
   "version": "0.1.0",
-  "description": "SmileDragon's ESLint config for frontend projects",
+  "description": "ESLint config for SmileDragon",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/smiledragon-corp/frontend.git",
-    "directory": "packages/eslint-config-smiledragon-frontend"
+    "url": "git+ssh://github.com/smiledragon-corp/eslint-config-smiledragon.git"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
   },
   "keywords": [
     "eslint",
@@ -21,16 +25,10 @@
   "author": "SmileDragon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/smiledragon-corp/frontend/issues"
+    "url": "https://github.com/smiledragon-corp/eslint-config-smiledragon/issues"
   },
-  "homepage": "https://github.com/smiledragon-corp/frontend#readme",
+  "homepage": "https://github.com/smiledragon-corp/eslint-config-smiledragon#readme",
   "dependencies": {
     "eslint": "^8.28.0"
-  },
-  "packageManager": "yarn@3.2.4",
-  "workspaces": {
-    "packages": [
-      "packages/**"
-    ]
   }
 }

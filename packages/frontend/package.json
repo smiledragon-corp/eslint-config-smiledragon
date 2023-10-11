@@ -1,13 +1,18 @@
 {
-  "name": "eslint-config-smiledragon-frontend",
+  "name": "@smiledragon-corp/eslint-config-frontend",
   "version": "1.0.0",
-  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
+    "publish": "yarn publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/smiledragon-corp/eslint-config-smiledragon.git",
+    "directory": "packages/frontend"
+  },
+  "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
     "eslint": "^8.48.0",
@@ -23,5 +28,9 @@
     "eslint-plugin-typescript-sort-keys": "^3.0.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smiledragon-corp/eslint-config-smiledragon/issues"
+  },
+  "homepage": "https://github.com/smiledragon-corp/eslint-config-smiledragon/packages/frontend#readme"
 }
