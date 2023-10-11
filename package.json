@@ -1,15 +1,20 @@
 {
-  "name": "eslint-config-smiledragon-frontend",
+  "name": "eslint-config-smiledragon",
   "version": "0.1.0",
-  "description": "SmileDragon's ESLint config for frontend projects",
+  "description": "ESLint config for SmileDragon",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/smiledragon-corp/frontend.git",
-    "directory": "packages/eslint-config-smiledragon-frontend"
+    "url": "git+ssh://github.com/smiledragon-corp/eslint-config-smiledragon.git"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
   },
   "keywords": [
     "eslint",
@@ -20,20 +25,10 @@
   "author": "SmileDragon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/smiledragon-corp/frontend/issues"
+    "url": "https://github.com/smiledragon-corp/eslint-config-smiledragon/issues"
   },
-  "homepage": "https://github.com/smiledragon-corp/frontend#readme",
+  "homepage": "https://github.com/smiledragon-corp/eslint-config-smiledragon#readme",
   "dependencies": {
-    "@typescript-eslint/parser": "^5.48.2",
-    "eslint": "^8.28.0",
-    "eslint-config-next": "^13.1.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-next": "^0.0.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.11",
-    "eslint-plugin-react-hooks": "^4.6.0"
-  },
-  "packageManager": "yarn@3.2.4"
+    "eslint": "^8.28.0"
+  }
 }
